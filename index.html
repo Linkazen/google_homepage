@@ -1,0 +1,117 @@
+<style>
+
+html, body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    font-family: arial, sans-serif;
+    font-size: 0.9em;
+}
+
+.centre {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: auto;
+    top: 8.5em;
+    clear: both;
+}
+
+/*Float from the top list line causes the picture to "flow around it" so the clear command
+stops that rest is pretty much centering and moving the iamge around to fit like the logo
+in the original webpage*/
+
+.right {
+    float: right;
+    padding-right: 2em;
+    padding-left: 0em;
+}
+
+.left {
+    float: left;
+    padding-left: 2em;
+    padding-right: 0em;
+}
+/* left and right floats the lists on the right and left
+corners of the screen*/
+
+.leftlist {
+    margin-right: 1em;
+
+}
+
+.rightlist {
+    margin-left: 1em;
+
+}
+
+li {
+    display: inline;
+}
+
+#bottombox {
+    position: fixed;
+    bottom: 0em;
+    background-color: rgb(242, 242, 242);
+    width: 100%;
+    border-top-style: solid;
+    border-top-width: 0.1em;
+    border-top-color:rgb(228, 228, 228);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+
+}
+</style>
+
+
+<title>
+    Google test page
+</title>
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+rel="stylesheet">
+
+<body>
+    <div>
+        <ul class="left" id="box1">
+            <li class="leftlist"><a href="">About</a></li>
+            <li class="leftlist"><a href="">Store</a></li>
+        </ul>    
+        <ul class="right">
+            <li class="rightlist"><a href="">Gmail</a></li>
+            <li class="rightlist"><a href="">Images</a></li>
+            <li class="rightlist"><a href="">herwe</a></li>
+            <li class="rightlist"><a target="_blank" href="https://github.com/Linkazen"class="material-icons-outlined">
+                account_circle"</a></li>
+        </ul>
+    </div>
+
+    <div>
+            <img class="centre" style="padding-bottom: 4em;" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="">
+            <input class="centre" name="search_bar" id="">
+    </div>
+
+    <div id="bottombox" style="font-size: 1.1em;">
+        <ul class="left">
+            <li class="leftlist"><a href="">Advertising</a></li>
+            <li class="leftlist"><a href="">Business</a></li>
+            <li class="leftlist"><a href="">How Search Works</a></li>
+        </ul>
+        <ul class="right">
+            <li class="rightlist"><a href="">Privacy</a></li>
+            <li class="rightlist"><a href="">Terms</a></li>
+            <li class="rightlist"><a href="">Settings</a></li>
+        </ul>
+    </div>
+
+</body>
