@@ -36,6 +36,7 @@ in the original webpage*/
     padding-left: 2em;
     padding-right: 0em;
 }
+
 /* left and right floats the lists on the right and left
 corners of the screen*/
 
@@ -71,6 +72,43 @@ a:hover {
     text-decoration: underline;
 
 }
+
+.topbaricons {
+    height: 1.2em;
+}
+
+#searchbar {
+    border-radius: 25px;
+    border: solid;
+    height: 3.5em;
+    width: 575px;
+    border-width: 0.1em;
+    border-color: rgb(215, 219, 223);
+    color: rgb(179, 179, 179);
+    
+    
+
+}
+
+#searchbutton {
+    position: relative;
+    z-index: 6;
+    float: right;
+    margin-right: ;
+    
+}
+
+#microphone {
+    position: relative;
+    z-index: 5;
+    float: left;
+
+}
+
+form {
+    position: relative;
+}
+
 </style>
 
 
@@ -88,18 +126,40 @@ rel="stylesheet">
             <li class="leftlist"><a href="">Store</a></li>
         </ul>    
         <ul class="right">
-            <li class="rightlist"><a href="">Gmail</a></li>
-            <li class="rightlist"><a href="">Images</a></li>
-            <li class="rightlist"><a href="">herwe</a></li>
-            <li class="rightlist"><a target="_blank" href="https://github.com/Linkazen"class="material-icons-outlined">
-                account_circle"</a></li>
+            <li class="rightlist">
+                <a href="">Gmail</a>
+            </li>
+            <li class="rightlist">
+                <a href="">Images</a>
+            </li>
+            <li class="rightlist">
+                <a href=""><img class="topbaricons" src="icons/apps_block.png"></a>
+            </li>
+            <li class="rightlist">
+                <a target="_blank" href="https://github.com/Linkazen"><img class="topbaricons" src="icons/account_circle.png"></a></a>
+                </li>
         </ul>
     </div>
 
     <div>
-            <img class="centre" style="padding-bottom: 4em;" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="">
-            <input class="centre" name="search_bar" id="">
+        <img class="centre" style="padding-bottom: 4em;" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="">
     </div>
+
+    <form action="submit">
+        <input class="centre" name="search_bar" id="searchbar">
+
+        <button id="searchbutton">
+            <a href="">
+                <img src="icons/search.png">
+            </a>
+        </button>
+
+        <button id="microphone">
+            <a href="">
+                <img src="icons/mic.png" alt="">
+            </a>
+        </button>
+    </form>
 
     <div id="bottombox" style="font-size: 1.1em;">
         <ul class="left">
