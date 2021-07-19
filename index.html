@@ -1,3 +1,8 @@
+<head>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+rel="stylesheet">
+
 <style>
 
 html, body
@@ -17,7 +22,7 @@ html, body
     margin-right: auto;
     position: relative;
     width: auto;
-    top: 8.5em;
+    top: 12em;
     clear: both;
 }
 
@@ -54,6 +59,38 @@ li {
     display: inline;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.topbaricons {
+    height: 1.2em;
+}
+
+.searchbar {
+    border: solid;
+    border-width: 2px;
+    border-color: rgb(212, 212, 212);
+    background-image: url(icons/search.png), url(icons/mic.png);
+    background-position: 10px 10px, 430px 10px;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 1.8em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 10em;
+    border-radius: 25px;
+    height: 3.4em;
+    width: 35em;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
 #bottombox {
     position: fixed;
     bottom: 0em;
@@ -64,50 +101,24 @@ li {
     border-top-color:rgb(228, 228, 228);
 }
 
-a {
-    text-decoration: none;
+#button1 , #button2 {
+    display: inline-block;
+    color: blue;
+    height: 35px;
+    width: 120px;
+    border-radius: 5px;
+    background-color: blue;
+    color: grey;
+    font-size: 12px;
+    text-align: center;
+    border: none;
 }
 
-a:hover {
-    text-decoration: underline;
-
+#container {
+    text-align: center;
+    margin-top: 12em;
 }
 
-.topbaricons {
-    height: 1.2em;
-}
-
-#searchbar {
-    border-radius: 25px;
-    border: solid;
-    height: 3.5em;
-    width: 575px;
-    border-width: 0.1em;
-    border-color: rgb(215, 219, 223);
-    color: rgb(179, 179, 179);
-    
-    
-
-}
-
-#searchbutton {
-    position: relative;
-    z-index: 6;
-    float: right;
-    margin-right: ;
-    
-}
-
-#microphone {
-    position: relative;
-    z-index: 5;
-    float: left;
-
-}
-
-form {
-    position: relative;
-}
 
 </style>
 
@@ -116,8 +127,7 @@ form {
     Google test page
 </title>
 
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-rel="stylesheet">
+</head>
 
 <body>
     <div>
@@ -145,21 +155,13 @@ rel="stylesheet">
         <img class="centre" style="padding-bottom: 4em;" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="">
     </div>
 
-    <form action="submit">
-        <input class="centre" name="search_bar" id="searchbar">
-
-        <button id="searchbutton">
-            <a href="">
-                <img src="icons/search.png">
-            </a>
-        </button>
-
-        <button id="microphone">
-            <a href="">
-                <img src="icons/mic.png" alt="">
-            </a>
-        </button>
-    </form>
+    <div>
+        <input class="searchbar" type="text">
+        <div id="container">
+            <button id="button1">Google Search</button>
+            <button id="button2" style="margin-left: 1em;">I'm Feeling Lucky</button>
+        </div>
+    </div>
 
     <div id="bottombox" style="font-size: 1.1em;">
         <ul class="left">
